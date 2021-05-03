@@ -112,7 +112,6 @@ a:focus {
     /* float: left; */
 }
 #column-1, #column-2, #column-3 {
-    /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
     color: #fff;
     line-height: 1.5em;
     font-size: 1em;
@@ -125,6 +124,13 @@ a:focus {
     padding: 1%;
 }
 /* Still trying to figure out how to contain the contents within the boxes (have the boxes stretch to fit the content as it resizes responsively) rather than have the content spill out as the browser window is resized. Box-sizing: border-box & giving the content padding aren't doing the trick. Changing the height from 50% to 60% helped this immensely and the rest I should be able to fix with breakpoints! */
+#column-1, #column-3 {
+    border: 3px solid #ffd517;
+}
+#column-2 {
+    border-left: 3px solid #ffd517;
+    border-right: 3px solid #ffd517;
+}
 
 span {
     color: #ffdd93;
@@ -187,6 +193,14 @@ footer a:focus {
       /* background-color: #4976f3; */
       width: 100%;
     }
+    #column-1, #column-2 {
+        border-top: 3px solid #ffd517;
+        border-left: 3px solid #ffd517;
+        border-right: 3px solid #ffd517;
+    }
+    #column-3 {
+        border: 3px solid #ffd517;
+    }
   
     footer {
       /* background-color: #1809e9; */
@@ -222,6 +236,11 @@ footer a:focus {
       /* background-color: #df5050; */
       width: 30%;
     }
+    #column-1,
+    #column-2,
+    #column-3 {
+        border: 3px solid #ffd517;
+    }
   
     footer {
       /* background-color: #610404; */
@@ -229,3 +248,5 @@ footer a:focus {
     }
      
 }
+@media (min-width: 1200px) 
+/* Maybe try putting the border rules in min AND max media query rules */
