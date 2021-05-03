@@ -194,12 +194,12 @@ footer a:focus {
       width: 100%;
     }
     #column-1, #column-2 {
-        border-top: 3px solid #ffd517;
-        border-left: 3px solid #ffd517;
-        border-right: 3px solid #ffd517;
+        border-top: 5px solid #ffd517;
+        border-left: 5px solid #ffd517;
+        border-right: 5px solid #ffd517;
     }
     #column-3 {
-        border: 3px solid #ffd517;
+        border: 5px solid #ffd517;
     }
   
     footer {
@@ -239,7 +239,7 @@ footer a:focus {
     #column-1,
     #column-2,
     #column-3 {
-        border: 3px solid #ffd517;
+        border: 5px solid #ffd517;
     }
   
     footer {
@@ -248,5 +248,5 @@ footer a:focus {
     }
      
 }
-@media (min-width: 1200px) 
+/* @media (min-width: 1200px)  */
 /* Maybe try putting the border rules in min AND max media query rules */
