@@ -125,11 +125,11 @@ a:focus {
 }
 /* Still trying to figure out how to contain the contents within the boxes (have the boxes stretch to fit the content as it resizes responsively) rather than have the content spill out as the browser window is resized. Box-sizing: border-box & giving the content padding aren't doing the trick. Changing the height from 50% to 60% helped this immensely and the rest I should be able to fix with breakpoints! */
 #column-1, #column-3 {
-    border: 3px solid #ffd517;
+    border: 5px solid #ffd517;
 }
 #column-2 {
-    border-left: 3px solid #ffd517;
-    border-right: 3px solid #ffd517;
+    border-left: 5px solid #ffd517;
+    border-right: 5px solid #ffd517;
 }
 
 span {
@@ -160,6 +160,11 @@ footer a:focus {
   
 
 /*---------- RESPONSIVE STYLES ----------*/
+@media (max-width:767px) {
+    #column-1, #column-2, #column-3 {
+        border: 5px solid transparent;
+    }
+}
 
 /*---------- TABLET ----------*/
 @media (min-width: 768px) {
@@ -193,6 +198,15 @@ footer a:focus {
       /* background-color: #4976f3; */
       width: 100%;
     }
+    
+  
+    footer {
+      /* background-color: #1809e9; */
+      font-size: 1.125em;
+    }
+    
+}
+@media (min-width: 768px) and (max-width:1199px) {
     #column-1, #column-2 {
         border-top: 5px solid #ffd517;
         border-left: 5px solid #ffd517;
@@ -201,13 +215,8 @@ footer a:focus {
     #column-3 {
         border: 5px solid #ffd517;
     }
-  
-    footer {
-      /* background-color: #1809e9; */
-      font-size: 1.125em;
-    }
-    
 }
+
   
   
 /*---------- DESKTOP ----------*/
