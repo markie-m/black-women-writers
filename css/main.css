@@ -55,12 +55,10 @@ h1 {
   
 /*---------- MAIN SECTION STYLES ----------*/
 main {
-    /* background-color:rgb(226, 195, 255); */
     background: linear-gradient(to top, rgb(210, 160, 245), 30%, rgb(179, 208, 245));
     height: 75%;
     width: 100%;
     padding: 2%;
-    /* flex-flow: row wrap; */
     flex-direction: column;
     font-weight: 300;
 }
@@ -100,17 +98,12 @@ a:hover,
 a:focus {
     color: #97e7ff;
     background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #ffd000 65%);
-    /* color: #FFD0AE; */
 }
 #column-1 a, #column-2 a, #column-3 a {
     text-shadow: 1px 1px 1px #4d0050;
 }
   
-.col-3 {
-    width: 100%;
-    height: 320px;
-    /* float: left; */
-}
+
 #column-1, #column-2, #column-3 {
     color: #fff;
     line-height: 1.5em;
@@ -123,10 +116,8 @@ a:focus {
     align-items: center;
     padding: 1%;
 }
-/* Still trying to figure out how to contain the contents within the boxes (have the boxes stretch to fit the content as it resizes responsively) rather than have the content spill out as the browser window is resized. Box-sizing: border-box & giving the content padding aren't doing the trick. Changing the height from 50% to 60% helped this immensely and the rest I should be able to fix with breakpoints! */
-#column-1, #column-3 {
-    /* border: 5px solid #ffd517; */
-}
+
+
 #column-2 {
     border-left: 5px solid #ffd517;
     border-right: 5px solid #ffd517;
@@ -139,7 +130,6 @@ span {
   
 /*---------- FOOTER STYLES ----------*/
 footer {
-    /* flex-direction: column; */
     text-align: center;
     font-weight: 300;
     width: 100%;
@@ -162,7 +152,6 @@ footer a:focus {
 /*---------- RESPONSIVE STYLES ----------*/
 @media (max-width:767px) {
     #column-1, #column-3 {
-        /* border: 5px solid transparent; */
         border: 5px solid #ffd517;
     }
     #column-2 {
@@ -174,7 +163,6 @@ footer a:focus {
 /*---------- TABLET ----------*/
 @media (min-width: 768px) {
     header {
-        /* background-color: #a0f0f3; */
         height: 20%;
     }
     h1 {
@@ -189,24 +177,15 @@ footer a:focus {
     #column-3 {
         font-size: 1.125em;
     }
-    #column-1 {
-      /* background-color: #4bdef8; */
-      width: 45%;
-    }
-  
+    #column-1,
     #column-2 {
-      /* background-color: #46a7f7; */
       width: 45%;
     }
-  
     #column-3 {
-      /* background-color: #4976f3; */
       width: 100%;
     }
-    
   
     footer {
-      /* background-color: #1809e9; */
       font-size: 1.125em;
     }
     
@@ -221,7 +200,6 @@ footer a:focus {
         border: 5px solid #ffd517;
     }
 }
-
   
   
 /*---------- DESKTOP ----------*/
@@ -230,30 +208,17 @@ footer a:focus {
         margin: 1.5em;
     }
     header {
-      /* background-color: #f1b2cf; */
       height: 15%;
     }
     h1 {
         font-size: 2.5em;
     }
-    #column-1 {
-      /* background-color: #f87676; */
-      width: 30%;
-    }
-  
-    #column-2 {
-      /* background-color: #df5074; */
-      width: 30%;
-    }
-  
-    #column-3 {
-      /* background-color: #df5050; */
-      width: 30%;
-    }
+    
     #column-1,
     #column-2,
     #column-3 {
         border: 5px solid #ffd517;
+        width: 30%;
     }
   
     footer {
@@ -262,5 +227,3 @@ footer a:focus {
     }
      
 }
-/* @media (min-width: 1200px)  */
-/* Maybe try putting the border rules in min AND max media query rules */
